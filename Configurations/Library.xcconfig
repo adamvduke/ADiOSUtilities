@@ -1,0 +1,22 @@
+//
+//  Library.xcconfig
+//  ADiOSUtilities
+//
+//  Created by Adam Duke on 11/21/11.
+//  Copyright 2011 Adam Duke. All rights reserved.
+//
+
+HEADERS_FOLDER_PATH           = /../ADiOSUtilities
+PRIVATE_HEADERS_FOLDER_PATH   = $(HEADERS_FOLDER_PATH)$(BASE_PRODUCT_NAME)/private
+PUBLIC_HEADERS_FOLDER_PATH    = $(HEADERS_FOLDER_PATH)$(BASE_PRODUCT_NAME)
+
+// Don't include the ADiOSUtilities libraries in the archive. This makes it possible to build IPAs in Xcode 4.
+SKIP_INSTALL = YES
+
+// Warning flags
+GCC_WARN_CHECK_SWITCH_STATEMENTS        = NO
+GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES
+GCC_WARN_SHADOW                         = YES
+GCC_WARN_ABOUT_MISSING_NEWLINE          = YES
+GCC_WARN_UNUSED_FUNCTION                = YES
+GCC_WARN_UNUSED_LABEL                   = YES
