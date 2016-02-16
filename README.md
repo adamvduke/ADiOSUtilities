@@ -9,7 +9,7 @@ Building/Linking/Adding to your project:
 
 All of the targets within the ADiOSUtilities project are ARC based. You will
 need an ARC compatible compiler. The current settings are designed to use the
-LLVM compiler available with the most recent release of XCode.
+LLVM compiler available with the most recent release of Xcode.
 
 There are a few steps to get your project to build and link the libraries.
 
